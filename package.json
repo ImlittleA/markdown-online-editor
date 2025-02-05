@@ -7,8 +7,8 @@
   "scripts": {
     "start": "yarn serve",
     "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
-    "vercel-build": "npm run build",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "vercel-build": "export NODE_OPTIONS=--openssl-legacy-provider && npm run build",
     "watcher": "onchange \"src/**/**/*.{js,css,scss,vue}\" -- prettier --write {{changed}}",
     "prettier": "prettier --write \"src/**/**/*.{js,css,scss,vue}\"",
     "lint": "vue-cli-service lint",
