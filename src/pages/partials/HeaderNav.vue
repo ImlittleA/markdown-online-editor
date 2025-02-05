@@ -12,7 +12,7 @@
       <nav class="button-group">
         <a
           v-if="!isMobile"
-          href="https://wechat.jeffjade.com/"
+          href="https://wechat.22vj.com/"
           class="header-link"
           target="_blank"
           rel="noopener"
